@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,*::after, *::before {
+  box-sizing: border-box;
+}
+
+h1,h2,h4,h4 {
+  margin: 0;
+}
+
+a,span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.create-post > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.create-post {
+  padding: 2em 0;
+}
+
+.create-post > form input {
+  padding: 0.6em;
+  outline: unset;
+  border: 1px solid royalblue;
+  border-radius: 5px;
+}
+
+.create-post > form button {
+  padding: 0.6em;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.create-post > form label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.create-comment {
+  width: 400px;
+}
+
+.create-comment > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.create-comment > form input {
+  padding: 0.3em;
+  outline: unset;
+  border: 1px solid rgb(29, 49, 109);
+  border-radius: 5px;
+}
+
+.create-comment > form button {
+  padding: 0.3em;
+  border: none;
+  background-color: rgb(29, 38, 68);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.create-comment > form label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 1px solid rgb(224, 231, 253);
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 242, 246);
+  padding: 1em;
+}
+
+.comment-list span {
+  line-height: 1.5;
+}
