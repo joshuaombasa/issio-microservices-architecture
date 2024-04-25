@@ -19,14 +19,14 @@ app.post('/events', async (request, response) => {
     console.log(event)
     events.push(event)
     try {
-        await axios.post('http://localhost:4034/events', event)
-    await axios.post('http://localhost:4030/events', event)
-    await axios.post('http://localhost:4031/events', event)
-    await axios.post('http://localhost:4032/events', event)
+        await axios.post('http://query-srv:4034/events', event)
+        await axios.post('http://posts-srv:4030/events', event)
+        await axios.post('http://comments-srv:4031/events', event)
+        await axios.post('http://moderation-srv:4032/events', event)
     } catch (error) {
         console.error(error)
     }
-   
+
 
     response.json({})
 })
