@@ -30,5 +30,5 @@ spec:
   ports:
     - name: query
       protocol: TCP
-      port: 4035
-      targetPort: 4035
+      port: 4034
+      targetPort: 4034
