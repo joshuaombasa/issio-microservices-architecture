@@ -48,7 +48,7 @@ app.post('/events', (request, response) => {
 
 
 app.listen(PORT, async () => {
-  const res = await axios.get('http://localhost:4035/events')
+  const res = await axios.get('http://event-bus-srv:4035/events')
   const events = res.data
   
   for (let event of events) {
